@@ -7,7 +7,7 @@ Utilities Provided:
 * Customizable Site Options.
 * Ways to Open the Popup:
     * Right clicking on a selection.
-    * Using the Default Key Combination of Ctrl+Shift+Z.
+    * Using the Default Key Combination of Ctrl+Shift+G.
 
 ## Installation
 
