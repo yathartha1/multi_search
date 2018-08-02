@@ -1,5 +1,5 @@
 [
     {
-        "keys": ["ctrl+shift+g"], "command": "multi_search"
+        "keys": ["ctrl+shift+z"], "command": "multi_search"
     }
 ]

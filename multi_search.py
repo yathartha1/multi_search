@@ -2,9 +2,17 @@ import webbrowser
 import sublime
 import sublime_plugin
 
-settings = sublime.load_settings("multi_search.sublime-settings")
-search_areas = settings.get('domains')
-urls = settings.get('domain_urls')
+
+search_areas = []
+urls = []
+
+def Get_Settings():
+    global search_areas
+    global urls
+    settings = sublime.load_settings("multi_search.sublime-settings")
+    search_areas = settings.get('domains')
+    urls = settings.get('domain_urls')
+
 def Search(index, query_string):
     if index != -1:
         url = urls[index] + "/search?q=" + query_string
@@ -16,6 +24,7 @@ class MultiSearchCommand(sublime_plugin.TextCommand):
     query_string = ''
     def run(self, edit):
         global search_areas
+        Get_Settings()
         for region in self.view.sel():
             if not region.empty():
                 self.query_string = self.view.substr(region)
