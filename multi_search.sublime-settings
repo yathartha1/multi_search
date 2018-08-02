@@ -1,4 +1,4 @@
 {
-    "domains": ["", "Google Search", "Stack Overflow Search", "Ask Ubuntu Search", ""],
-    "domain_urls": ["", "https://www.google.com", "https://stackoverflow.com", "https://askubuntu.com/search", ""]
+    "domains": ["Google Search", "Stack Overflow Search", "Ask Ubuntu Search"],
+    "domain_urls": ["https://www.google.com", "https://stackoverflow.com", "https://askubuntu.com/search"]
 }
